@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz</title>
+    <link rel="stylesheet" href="style\sytle.css">
+</head>
+<main>
+
+    <body>
+        <header>
+            <div class="Highscore">
+                <h3><a href="#HighScorePage">View Highscore</a></h3>
+            </div>
+            <div class="Time">
+                <h3>Time:<span class="Timer">100</span></h3>
+            </div>
+        </header>
+
+        <section class="main-page">
+            <h1>Welcome to a Coding Quiz Challenge on JS Fundamentals</h1>
+            <h3>Press Start to begin the game. Once the game begins, the timer will start. If you choose an incorrect answer, the timer will decrease. Good Luck!
+            </h2>
+                <button class="start-quiz">Start Quiz!</button>
+        </section>
+
+        <section class="HighScorePage" id="HighScorePage">
+            <ul class="HighScores"></ul>
+            <button class="ReturnToMenu">Return to main menu</button>
+        </section>
+
+        <section class="DonePage">
+            <h2>All done!</h2>
+            <form class="toHighScores">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" class ="Name"><br>
+                <input type="submit" value="Send" class="send"/>
+            </form>
+            <h3 class="FinalScore"></h3>
+        </section>
+
+        <section class="Quiz">
+            <h2 class="question1"></h2>
+            <h2 class="question2"></h2>
+            <h2 class="question3"></h2>
+            <h2 class="question4"></h2>
+        </section>
+    </body>
+
+<script src="script\script.js"></script>
+</main>
+
+</html>

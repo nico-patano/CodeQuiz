@@ -272,7 +272,7 @@ function handleFormSubmit(event) {
     leaderboards[playerName] = finalScore
   
     highScores.append(highScoreItem);
-    score.append(" Your score has been saved!")
+    score.append("  Score Saved!")
     
     localStorage.setItem("leaderboards", JSON.stringify(leaderboards))
 
